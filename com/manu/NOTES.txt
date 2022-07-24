@@ -1,0 +1,73 @@
+Object oriented programming
+	Class
+	Object
+	Data (state)
+	Actions (behaviour)
+	Encapsulation
+	Abstraction
+	
+Collections
+	Datastructures like array, linklist, tree, etc are complex. Collections help us focus on the business logic.
+	Collections are implementations of these datastructures
+	List
+		Cares about which position each object is in
+		Elements can be added in by specifying position- where it should be added
+		If element is added without specifying position, it is added at the end
+		List can have duplicate values
+		List<String> names = List.of("Manu", "Ram", "Jaya");
+		names.size()
+		names.isEmpty()
+		names.get(2)
+		names.contains("Ram")
+		names.indexOf("Ram")
+		Anything created using list.of is immutable; we cannot do names.add("Maya")
+		mutable lists are ArrayList, LinkedList, Vector
+			List<String> wordsArrayList = new ArrayList<String>(names)
+			List<String> wordsLinkedList = new LinkedList<String>(names)
+			List<String> wordsVector = new Vector<String>(names)
+			wordsArrayList.add("Bhymi")
+			wordsArrayList.add(2,"Bhymi")
+			wordsArrayList.addAll(anotherList)
+			wordsArrayList.set(6,"Bhymi")
+			wordsArrayList.remove(2)
+			wordsArrayList.remove("Bhymi")
+			for(String word: wordsArrayList){}
+			Iterator wordsIterator = wordsArrayList.iterator(); while(wordsIterator.hasNext()){}
+			numbersAl.remove(Integer.valueOf(101))
+	ArrayList
+		Datastructure used is Array
+		For Array, insertion and deletion are costly and slower compared to LinkedList
+		Accessing a value from array is very fast
+	Vector
+		Datastructure used is Array
+		Vector is older
+		It has methods which are synchronized (Thread safe). It has a performance impact
+		If a instance of a vector class is shared b/w multiple threads, only one of those threads can be executing any of these 25 methods
+		
+	LinkedList
+		Datastructure used is LinkedList
+		insertion and deletion of value is easier than from array
+		accessing a value from a specific location is costlier
+		finding a element is costlier
+	Set
+	Queue
+	Map
+	
+Generics
+	To make classes that are not tied to any datatype
+	
+Funtional Programming in Java
+	Functions are first class citizens
+	Declarative style of programming - what to do : not how to do
+	storing functions in variables
+	passing functions as arguments to method
+	returning function from method
+	Functional Interfaces
+		Predicate - filter()
+		Consumer - forEach()
+		Function - map()
+	Method references
+		s-> System.out.println(s)  ---- System.out::println
+		<<Classname>>.<<method name>>
+		
+Ctrl+Shift+T
